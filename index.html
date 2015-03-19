@@ -88,6 +88,18 @@
 			window.vkid = flashVars['viewer_id'];
 			window.language = flashVars['language'];
 			window.is_app_user = flashVars['is_app_user'];
+			console.log(flashVars);
+			VK.api("storage.getKeys", window.vkid, function(data) {
+				console.log(data);
+			});
+			VK.api("storage.set",{ key: 'polk', value: 99, user_id: window.vkid}, function(data) {
+
+
+				VK.api("storage.getKeys", { key: 'polk', user_id: window.vkid}, function(data) {
+					console.log(data);
+				});
+
+			});
 //			window.vkid = 1000000;   // develop
 		});
 	}
