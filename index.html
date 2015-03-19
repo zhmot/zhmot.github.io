@@ -98,10 +98,10 @@
 
 				console.log(data);
 			});
-			VK.api("storage.set",{ key: 'polk', value: 99, user_id: window.vkid}, function(data) {
+			VK.api("storage.set",{ key: 'polk', value: 99, user_id: '0'}, function(data) {
 
 
-				VK.api("storage.get", { key: 'polk', user_id: window.vkid}, function(data) {
+				VK.api("storage.get", { key: 'polk', user_id: '0'}, function(data) {
 					console.log("storage.get");
 					console.log(data);
 				});
