@@ -1,0 +1,1 @@
+tryHskControllers.controller('CheckboxController', ['$scope', '$rootScope', 'checkboxValues', function ($scope, $rootScope, checkboxValues) {}]);

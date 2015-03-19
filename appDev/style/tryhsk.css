@@ -1,0 +1,33 @@
+.tab-control {
+    width: 100% !important;
+    position: absolute;
+}
+.test {
+    width: 50%;margin: 0 auto;
+}
+.checkboxtree {
+    height: 500px ;overflow: scroll;overflow-x: hidden;
+}
+.searchSummary {
+    height: 20px;width: 100%;
+}
+.zoneSummary {
+    height: 500px; overflow: scroll; overflow-x: hidden;
+}
+.buttonSound {
+    font-size: 40px!important;height: 120px !important;width: 120px !important;
+}
+.font60 {
+    font-size: 60px!important;
+}
+.font20 {
+    font-size: 20px!important;
+}
+.classCurrentRights {
+    position: absolute;
+    left: 20px;top: 100px;
+    margin-top: 0;
+}
+body  {
+    background-color: #ffffff;
+}
