@@ -88,14 +88,21 @@
 			window.vkid = flashVars['viewer_id'];
 			window.language = flashVars['language'];
 			window.is_app_user = flashVars['is_app_user'];
+			console.log("#######");
 			console.log(flashVars);
+			console.log(window.vkid);
+			console.log("#######");
+
 			VK.api("storage.getKeys", window.vkid, function(data) {
+				console.log("storage.getKeys");
+
 				console.log(data);
 			});
 			VK.api("storage.set",{ key: 'polk', value: 99, user_id: window.vkid}, function(data) {
 
 
-				VK.api("storage.getKeys", { key: 'polk', user_id: window.vkid}, function(data) {
+				VK.api("storage.get", { key: 'polk', user_id: window.vkid}, function(data) {
+					console.log("storage.get");
 					console.log(data);
 				});
 
