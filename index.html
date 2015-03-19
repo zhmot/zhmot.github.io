@@ -93,7 +93,7 @@
 			console.log(window.vkid);
 			console.log("#######");
 
-			VK.api("storage.getKeys", window.vkid, function(data) {
+			VK.api("storage.getKeys", {user_id: window.vkid}, function(data) {
 				console.log("storage.getKeys");
 
 				console.log(data);
